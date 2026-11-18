@@ -1,0 +1,36 @@
+%% Secuencia del flujo principal: Oferta -> Ir al local -> Ruta.
+sequenceDiagram
+  autonumber
+  actor V as Visitante
+  participant UI as Interfaz React
+  participant API as API Express
+  participant DB as PostgreSQL
+  participant DJ as Dijkstra (shared)
+  V->>UI: Abre «Ofertas»
+  UI->>API: GET /api/v1/ofertas
+  API->>DB: SELECT ... vigentes (hoy en Bogotá)
+  DB-->>API: filas
+  API-->>UI: 200 [ofertas]
+  V->>UI: Pulsa «Ir al local»
+  UI->>UI: destino = nodo del local, abre el mapa
+  alt Falta el punto de partida
+    UI-->>V: Aviso «primero elige tu punto de partida» y foco en el selector
+    V->>UI: Elige el punto de partida
+  end
+  UI->>API: POST /api/v1/rutas {origen, destino, evitarEscaleras}
+  API->>API: valida la petición
+  API->>DB: SELECT nodos y conexiones
+  DB-->>API: grafo
+  API->>DJ: dijkstra(grafo, origen, destino, opciones)
+  alt Hay camino
+    DJ-->>API: camino y costo
+    API-->>UI: 200 {tramos, pisos, instrucciones}
+    UI-->>V: Dibuja el tramo del piso y muestra las indicaciones
+  else Sin camino / nodo inexistente
+    DJ-->>API: ErrorRuta
+    API-->>UI: 422 / 404 con mensaje
+    UI-->>V: Mensaje comprensible
+  else Base de datos caída
+    API-->>UI: 503 BD_NO_DISPONIBLE
+    UI-->>V: Mensaje y botón «Reintentar»
+  end

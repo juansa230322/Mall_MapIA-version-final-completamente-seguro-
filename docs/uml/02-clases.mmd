@@ -1,0 +1,81 @@
+%% Diagrama de clases: modelo de datos y módulos principales del prototipo.
+classDiagram
+  direction LR
+  class Piso {
+    +piso_id: smallint
+    +numero_nivel: smallint
+    +nombre_piso: varchar[50]
+    +svg_url: text
+    +ancho_viewbox: numeric
+    +alto_viewbox: numeric
+  }
+  class Nodo {
+    +nodo_id: varchar[20]
+    +posicion_x: numeric
+    +posicion_y: numeric
+    +tipo_nodo: pasillo|local|bano|entrada|ascensor|escalera
+    +nombre: varchar[100]
+    +es_transicion: boolean
+    +es_accesible: boolean
+  }
+  class Conexion {
+    +conexion_id: serial
+    +costo: numeric
+    +tipo_conexion: pasillo|ascensor|escalera
+    +es_bidireccional: boolean
+    +es_accesible: boolean
+    +fuente: anotada_svg|supuesta_demo
+  }
+  class Tienda {
+    +tienda_id: uuid
+    +nombre_tienda: varchar[100]
+    +numero_local: varchar[20]
+    +categoria: varchar[50]
+    +es_demo: boolean
+  }
+  class Promocion {
+    +promocion_id: uuid
+    +titulo_oferta: varchar[150]
+    +descripcion: text
+    +porcentaje_descuento: numeric
+    +fecha_inicio: date
+    +fecha_fin: date
+    +es_activa: boolean
+    +origen: varchar[40]
+    +vigente() boolean
+  }
+  class Dijkstra {
+    <<módulo shared/dijkstra.js>>
+    +construirAdyacencia(conexiones, excluirTipos)
+    +dijkstra(grafo, origen, destino, opciones)
+  }
+  class Instrucciones {
+    <<módulo shared/instrucciones.js>>
+    +construirRecorrido(camino, aristas, nodos)
+  }
+  class Repositorio {
+    <<server/repositorio.js>>
+    +obtenerMapa()
+    +listarPromociones(soloVigentes)
+    +crearPromocion(datos)
+    +actualizarPromocion(id, datos)
+    +eliminarPromocion(id)
+    +importarPromociones(origen, ofertas)
+  }
+  Piso "1" --> "*" Nodo : contiene
+  Nodo "1" --> "*" Conexion : origen
+  Nodo "1" --> "*" Conexion : destino
+  Tienda "0..1" --> "1" Nodo : se_ubica_en
+  Tienda "1" --> "*" Promocion : publica
+  class ApiExpress {
+    <<server/app.js>>
+    +GET /mapa
+    +GET /ofertas
+    +POST /rutas
+    +CRUD /admin/ofertas
+  }
+  ApiExpress ..> Repositorio : usa
+  ApiExpress ..> Dijkstra : usa
+  ApiExpress ..> Instrucciones : usa
+  Dijkstra ..> Conexion : lee
+  Instrucciones ..> Nodo : lee

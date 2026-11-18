@@ -1,0 +1,22 @@
+
+Running 16 tests using 1 worker
+
+  ✓   1 [escritorio] › tests/e2e/mallmapai.spec.js:13:1 › E-01 el mapa carga con leyenda escrita, cambio de piso y zoom (1.1s)
+  ✓   2 [escritorio] › tests/e2e/mallmapai.spec.js:31:1 › E-02 aparece un aviso cuando falta el destino (706ms)
+  ✓   3 [escritorio] › tests/e2e/mallmapai.spec.js:38:1 › E-03 ruta del piso 1 al piso 3 con «Evitar escaleras» usa ascensores (1.5s)
+  ✓   4 [escritorio] › tests/e2e/mallmapai.spec.js:58:1 › E-04 flujo Oferta → Ir al local → Ruta (pide origen si falta) (1.4s)
+  ✓   5 [escritorio] › tests/e2e/mallmapai.spec.js:78:1 › E-05 el destino se elige desde el mapa con teclado (698ms)
+  -   6 [escritorio] › tests/e2e/mallmapai.spec.js:91:1 › E-06 pantalla móvil de 390 px: sin desbordes y con ruta funcional
+  ✓   7 [escritorio] › tests/e2e/mallmapai.spec.js:106:1 › E-07 error de servidor muestra mensaje y el reintento funciona (648ms)
+  ✓   8 [escritorio] › tests/e2e/mallmapai.spec.js:120:1 › E-08 sin ofertas vigentes se muestra un estado vacío (588ms)
+  ✓   9 [movil-390] › tests/e2e/mallmapai.spec.js:13:1 › E-01 el mapa carga con leyenda escrita, cambio de piso y zoom (1.1s)
+  ✓  10 [movil-390] › tests/e2e/mallmapai.spec.js:31:1 › E-02 aparece un aviso cuando falta el destino (595ms)
+  ✓  11 [movil-390] › tests/e2e/mallmapai.spec.js:38:1 › E-03 ruta del piso 1 al piso 3 con «Evitar escaleras» usa ascensores (1.7s)
+  ✓  12 [movil-390] › tests/e2e/mallmapai.spec.js:58:1 › E-04 flujo Oferta → Ir al local → Ruta (pide origen si falta) (2.2s)
+  -  13 [movil-390] › tests/e2e/mallmapai.spec.js:78:1 › E-05 el destino se elige desde el mapa con teclado
+  ✓  14 [movil-390] › tests/e2e/mallmapai.spec.js:91:1 › E-06 pantalla móvil de 390 px: sin desbordes y con ruta funcional (1.3s)
+  ✓  15 [movil-390] › tests/e2e/mallmapai.spec.js:106:1 › E-07 error de servidor muestra mensaje y el reintento funciona (653ms)
+  ✓  16 [movil-390] › tests/e2e/mallmapai.spec.js:120:1 › E-08 sin ofertas vigentes se muestra un estado vacío (536ms)
+
+  2 skipped
+  14 passed (17.8s)

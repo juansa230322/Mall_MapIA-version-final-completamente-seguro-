@@ -1,0 +1,60 @@
+%% Modelo lógico relacional (entidad-relación).
+erDiagram
+  PISO ||--o{ NODO : contiene
+  NODO ||--o{ CONEXION : "origen"
+  NODO ||--o{ CONEXION : "destino"
+  NODO ||--o| TIENDA : "se_ubica_en"
+  TIENDA ||--o{ PROMOCION : publica
+  PISO {
+    smallint piso_id PK
+    smallint numero_nivel UK
+    varchar nombre_piso
+    text svg_url
+    numeric ancho_viewbox
+    numeric alto_viewbox
+  }
+  NODO {
+    varchar nodo_id PK
+    smallint piso_id FK
+    numeric posicion_x
+    numeric posicion_y
+    varchar tipo_nodo
+    varchar nombre
+    boolean es_transicion
+    boolean es_accesible
+  }
+  CONEXION {
+    serial conexion_id PK
+    varchar nodo_origen_id FK
+    varchar nodo_destino_id FK
+    numeric costo
+    varchar tipo_conexion
+    boolean es_bidireccional
+    boolean es_accesible
+    varchar fuente
+  }
+  TIENDA {
+    uuid tienda_id PK
+    varchar nodo_id FK,UK
+    varchar nombre_tienda
+    varchar numero_local UK
+    varchar categoria
+    text logo_url
+    boolean es_demo
+  }
+  PROMOCION {
+    uuid promocion_id PK
+    uuid tienda_id FK
+    varchar titulo_oferta
+    text descripcion
+    numeric porcentaje_descuento
+    date fecha_inicio
+    date fecha_fin
+    text imagen_url
+    boolean es_activa
+    varchar origen
+    varchar registrado_por
+    boolean es_demo
+    timestamptz created_at
+    timestamptz updated_at
+  }

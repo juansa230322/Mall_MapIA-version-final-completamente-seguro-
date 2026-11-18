@@ -1,0 +1,28 @@
+# PostgreSQL 16 para MallMapAI con Docker Desktop.
+#   docker compose up -d db        -> crea y enciende la base
+#   docker compose stop db         -> la apaga (los datos se conservan en el volumen)
+#   docker compose down -v         -> la borra con todos sus datos
+# La clave sale de POSTGRES_PASSWORD en el archivo .env (Docker Compose lo lee solo).
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: mallmapai-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mallmapai
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cambia_esta_clave}
+      POSTGRES_DB: mallmapai
+      TZ: America/Bogota
+    ports:
+      - "55432:5432"   # puerto 55432 en tu PC para no chocar con un PostgreSQL de Windows (5432)
+    volumes:
+      - mallmapai_datos:/var/lib/postgresql/data
+      - ./db/docker-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mallmapai -d mallmapai"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  mallmapai_datos:

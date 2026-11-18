@@ -1,0 +1,31 @@
+// Diagrama de casos de uso de MallMapAI (Graphviz). Generar: dot -Tsvg 01-casos-de-uso.dot -o 01-casos-de-uso.svg
+// [I] implementado en el prototipo · [P] pendiente (línea punteada)
+digraph casos_de_uso {
+  rankdir=LR; nodesep=0.25; ranksep=1.1; fontname="Helvetica";
+  node [fontname="Helvetica", fontsize=11]; edge [fontname="Helvetica", fontsize=9, arrowhead=none];
+  visitante [shape=none, label="👤\nVisitante"];
+  admin     [shape=none, label="👤\nAdministrador\n(token de servicio)"];
+  import    [shape=none, label="⚙\nImportador\nPython"];
+  subgraph cluster_sistema {
+    label="Sistema MallMapAI"; style=rounded; color="#0b5d6b"; fontcolor="#0b5d6b"; fontsize=13;
+    node [shape=ellipse, style=filled, fillcolor="#e8f3f5", color="#0b5d6b"];
+    uc1 [label="Explorar mapa por piso\n(zoom y desplazamiento) [I]"];
+    uc2 [label="Elegir punto de partida [I]"];
+    uc3 [label="Elegir destino\n(mapa o lista) [I]"];
+    uc4 [label="Trazar ruta (Dijkstra) [I]"];
+    uc5 [label="Evitar escaleras [I]"];
+    uc6 [label="Consultar ofertas vigentes [I]"];
+    uc7 [label="Ir al local desde una oferta [I]"];
+    uc8 [label="Crear / editar / eliminar\npromoción [I]"];
+    uc9 [label="Importar promociones [I]"];
+    uc10 [label="Iniciar sesión con JWT [P]", style="filled,dashed", fillcolor="#f4f4f4", fontcolor="#666666"];
+    uc11 [label="Guardar favoritos [P]", style="filled,dashed", fillcolor="#f4f4f4", fontcolor="#666666"];
+    uc12 [label="Recibir notificaciones [P]", style="filled,dashed", fillcolor="#f4f4f4", fontcolor="#666666"];
+  }
+  visitante -> {uc1 uc2 uc3 uc4 uc6 uc7};
+  visitante -> {uc11 uc12} [style=dashed];
+  admin -> uc8; admin -> uc10 [style=dashed];
+  import -> uc9;
+  uc5 -> uc4 [label="«extend»", style=dashed, arrowhead=vee];
+  uc7 -> uc4 [label="«include»", style=dashed, arrowhead=vee];
+}

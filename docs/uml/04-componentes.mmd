@@ -1,0 +1,28 @@
+%% Diagrama de componentes del prototipo.
+flowchart LR
+  subgraph navegador["Navegador (escritorio o celular)"]
+    ui["Interfaz React + Vite<br/>client/src"]
+    planos["Planos SVG originales<br/>client/public/planos"]
+  end
+  subgraph servidor["Servidor Node.js 24"]
+    express["API REST Express<br/>/api/v1"]
+    valid["Validación<br/>server/validacion.js"]
+    repo["Repositorio SQL<br/>parametrizado"]
+    shared["Dijkstra + Indicaciones<br/>shared/"]
+  end
+  subgraph datos["PostgreSQL 16"]
+    db[("piso · nodo · conexion<br/>tienda · promocion")]
+  end
+  py["Importador Python<br/>importer/"]
+  fuentes["Fuentes HTML de muestra"]
+  ui -- "HTTP/JSON" --> express
+  ui -- "carga" --> planos
+  express --> valid
+  express --> repo
+  express --> shared
+  repo -- "pg (TLS opcional)" --> db
+  fuentes --> py
+  py -- "POST /admin/ofertas/importar<br/>Bearer token" --> express
+  nota["Opción local: Docker o Windows<br/>Opción remota: Supabase"]:::nota
+  nota -.- db
+  classDef nota fill:#fff4d6,stroke:#c9a227;

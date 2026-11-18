@@ -1,0 +1,8 @@
+test_PY01_fuente_a_lee_tarjetas (test_importador.PruebasLectores.test_PY01_fuente_a_lee_tarjetas) ... ok
+test_PY02_fuente_b_convierte_fechas (test_importador.PruebasLectores.test_PY02_fuente_b_convierte_fechas) ... ok
+test_PY03_porcentaje_y_fechas_raras (test_importador.PruebasLectores.test_PY03_porcentaje_y_fechas_raras) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.012s
+
+OK

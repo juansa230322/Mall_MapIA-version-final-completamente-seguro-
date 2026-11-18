@@ -1,0 +1,2 @@
+Base de datos lista.
+  pisos: 3 | nodos: 115 | conexiones: 121 | tiendas: 35 | promociones: 7 (vigentes: 6)

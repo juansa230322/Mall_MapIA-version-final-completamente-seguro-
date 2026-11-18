@@ -1,0 +1,116 @@
+nodo_id,piso_id,posicion_x,posicion_y,tipo_nodo,nombre,es_transicion,es_accesible
+P1-ASC,1,727.531,548.500,ascensor,Ascensor central sur,t,t
+P1-B01,1,558.531,538.500,bano,Baños sector oeste,f,t
+P1-B02,1,887.531,542.500,bano,Baños sector este,f,t
+P1-C01,1,724.531,400.500,pasillo,Plazoleta norte (frente a escaleras),f,t
+P1-C02,1,727.531,476.500,pasillo,Plazoleta central,f,t
+P1-C03,1,727.531,527.500,pasillo,Pasillo C03,f,t
+P1-C04,1,673.531,413.500,pasillo,Pasillo C04,f,t
+P1-C05,1,682.531,443.500,pasillo,Pasillo C05,f,t
+P1-C06,1,642.531,444.500,pasillo,Pasillo C06,f,t
+P1-C07,1,614.531,472.500,pasillo,Pasillo C07,f,t
+P1-C08,1,588.531,499.500,pasillo,Pasillo C08,f,t
+P1-C09,1,560.531,527.500,pasillo,Pasillo C09,f,t
+P1-C10,1,582.531,556.500,pasillo,Pasillo C10,f,t
+P1-C11,1,766.531,440.500,pasillo,Pasillo C11,f,t
+P1-C12,1,801.531,444.500,pasillo,Pasillo C12,f,t
+P1-C13,1,825.531,468.500,pasillo,Pasillo C13,f,t
+P1-C14,1,851.531,494.500,pasillo,Pasillo C14,f,t
+P1-C15,1,875.531,518.500,pasillo,Pasillo C15,f,t
+P1-C16,1,878.531,542.500,pasillo,Pasillo C16,f,t
+P1-C17,1,865.531,556.500,pasillo,Pasillo C17,f,t
+P1-C18,1,643.531,382.500,pasillo,Pasillo noroeste (punto de referencia),f,t
+P1-C19,1,797.531,390.500,pasillo,Pasillo C19,f,t
+P1-E01,1,713.531,549.500,entrada,Entrada sur (oeste),f,t
+P1-E02,1,741.531,549.500,entrada,Entrada sur (este),f,t
+P1-ESC,1,727.531,424.500,escalera,Escaleras centrales,t,f
+P1-L01,1,691.531,477.500,local,Local L01,f,t
+P1-L02,1,664.531,450.500,local,Local L02,f,t
+P1-L03,1,642.531,415.500,local,Local L03,f,t
+P1-L04,1,709.531,539.500,local,Local L04,f,t
+P1-L05,1,744.531,539.500,local,Local L05,f,t
+P1-L06,1,758.531,477.500,local,Local L06,f,t
+P1-L07,1,782.531,452.500,local,Local L07,f,t
+P1-L08,1,808.531,415.500,local,Local L08,f,t
+P1-L09,1,684.531,592.500,local,Local L09,f,t
+P1-L10,1,766.531,592.500,local,Local L10,f,t
+P2-ASC,2,737.000,585.554,ascensor,Ascensor central sur,t,t
+P2-B01,2,491.000,556.554,bano,Baños sector oeste,f,t
+P2-C01,2,736.000,416.554,pasillo,Plazoleta norte del piso 2,f,t
+P2-C02,2,713.000,428.554,pasillo,Pasillo C02,f,t
+P2-C03,2,694.000,429.554,pasillo,Pasillo C03,f,t
+P2-C04,2,763.000,434.554,pasillo,Pasillo C04,f,t
+P2-C05,2,692.000,451.554,pasillo,Pasillo C05,f,t
+P2-C06,2,671.000,468.554,pasillo,Pasillo C06,f,t
+P2-C07,2,682.000,479.554,pasillo,Pasillo C07,f,t
+P2-C08,2,698.000,495.554,pasillo,Pasillo C08,f,t
+P2-C09,2,717.000,510.554,pasillo,Pasillo C09,f,t
+P2-C10,2,736.000,520.554,pasillo,Hall sur del piso 2,f,t
+P2-C11,2,755.000,508.554,pasillo,Pasillo C11,f,t
+P2-C12,2,771.000,491.554,pasillo,Pasillo C12,f,t
+P2-C13,2,791.000,473.554,pasillo,Pasillo C13,f,t
+P2-C14,2,781.000,451.554,pasillo,Pasillo C14,f,t
+P2-C15,2,652.000,455.554,pasillo,Pasillo C15,f,t
+P2-C16,2,638.000,508.554,pasillo,Pasillo C16,f,t
+P2-C17,2,619.000,524.554,pasillo,Pasillo C17,f,t
+P2-C18,2,812.000,488.554,pasillo,Pasillo C18,f,t
+P2-C19,2,840.000,517.554,pasillo,Pasillo C19,f,t
+P2-C20,2,864.000,551.554,pasillo,Pasillo C20,f,t
+P2-C21,2,581.000,529.554,pasillo,Pasillo C21,f,t
+P2-C22,2,521.000,537.554,pasillo,Pasillo C22,f,t
+P2-C23,2,509.000,551.554,pasillo,Pasillo C23,f,t
+P2-C24,2,785.000,416.554,pasillo,Pasillo C24,f,t
+P2-C25,2,635.000,436.554,pasillo,Pasillo C25,f,t
+P2-C27,2,656.000,491.554,pasillo,Pasillo C27,f,t
+P2-ESC12,2,741.000,457.554,escalera,Escaleras centrales (llegan del piso 1),t,f
+P2-ESC23A,2,725.000,564.554,escalera,Escalera sur oeste (hacia piso 3),t,f
+P2-ESC23B,2,748.000,564.554,escalera,Escalera sur este (hacia piso 3),t,f
+P2-L01,2,704.000,516.554,local,Local L01,f,t
+P2-L02,2,716.000,530.554,local,Local L02,f,t
+P2-L03,2,687.000,500.554,local,Local L03,f,t
+P2-L04,2,752.000,528.554,local,Local L04,f,t
+P2-L05,2,769.000,518.554,local,Local L05,f,t
+P2-L06,2,651.000,483.554,local,Local L06,f,t
+P2-L07,2,623.000,510.554,local,Local L07,f,t
+P2-L08,2,808.000,499.554,local,Local L08,f,t
+P2-L09,2,822.000,484.554,local,Local L09,f,t
+P2-L10,2,734.000,406.554,local,Local L10,f,t
+P2-L11,2,842.000,535.554,local,Local L11,f,t
+P3-ASC,3,648.500,563.500,ascensor,Ascensor central sur,t,t
+P3-B01,3,457.500,459.500,bano,Baños sector oeste,f,t
+P3-C01,3,648.500,585.500,pasillo,Hall del ascensor piso 3,f,t
+P3-C02,3,612.500,585.500,pasillo,Pasillo C02,f,t
+P3-C03,3,583.500,587.500,pasillo,Pasillo C03,f,t
+P3-C04,3,557.500,587.500,pasillo,Pasillo C04,f,t
+P3-C05,3,530.500,579.500,pasillo,Pasillo C05,f,t
+P3-C06,3,510.500,563.500,pasillo,Pasillo C06,f,t
+P3-C07,3,498.500,543.500,pasillo,Pasillo C07,f,t
+P3-C08,3,490.500,527.500,pasillo,Pasillo C08,f,t
+P3-C09,3,471.500,509.500,pasillo,Pasillo C09,f,t
+P3-C10,3,461.500,487.500,pasillo,Pasillo C10,f,t
+P3-C11,3,452.500,477.500,pasillo,Pasillo C11,f,t
+P3-C12,3,689.500,585.500,pasillo,Pasillo C12,f,t
+P3-C13,3,712.500,585.500,pasillo,Pasillo C13,f,t
+P3-C14,3,740.500,585.500,pasillo,Pasillo C14,f,t
+P3-C15,3,764.500,577.500,pasillo,Pasillo C15,f,t
+P3-C16,3,789.500,565.500,pasillo,Pasillo C16,f,t
+P3-C17,3,799.500,545.500,pasillo,Pasillo C17,f,t
+P3-C18,3,808.500,524.500,pasillo,Pasillo C18,f,t
+P3-C19,3,811.500,505.500,pasillo,Pasillo C19,f,t
+P3-C20,3,815.500,483.500,pasillo,Pasillo C20,f,t
+P3-ESCA,3,635.500,570.500,escalera,Escalera sur oeste,t,f
+P3-ESCB,3,659.500,570.500,escalera,Escalera sur este,t,f
+P3-L01,3,608.500,564.500,local,Local L01,f,t
+P3-L02,3,583.500,564.500,local,Local L02,f,t
+P3-L03,3,553.500,561.500,local,Local L03,f,t
+P3-L04,3,530.500,554.500,local,Local L04,f,t
+P3-L05,3,515.500,542.500,local,Local L05,f,t
+P3-L06,3,501.500,528.500,local,Local L06,f,t
+P3-L07,3,488.500,514.500,local,Local L07,f,t
+P3-L08,3,689.500,564.500,local,Local L08,f,t
+P3-L09,3,714.500,564.500,local,Local L09,f,t
+P3-L10,3,750.500,561.500,local,Local L10,f,t
+P3-L11,3,768.500,551.500,local,Local L11,f,t
+P3-L12,3,781.500,539.500,local,Local L12,f,t
+P3-L13,3,795.500,526.500,local,Local L13,f,t
+P3-L14,3,826.500,472.500,local,Local L14,f,t

@@ -1,0 +1,1680 @@
+{
+ "_nota": "Grafo anotado a mano sobre las marcas de color de los SVG originales. Coordenadas en unidades del viewBox de cada piso. Las conexiones son inferidas por cercania y recorrido visual; las conexiones verticales entre pisos son una correspondencia SUPUESTA para demostracion. Los costos estan en unidades del plano, no en metros.",
+ "sector": {
+  "nombre": "Eje central-sur (sector piloto)",
+  "bbox": {
+   "1": [
+    530,
+    360,
+    910,
+    615
+   ],
+   "2": [
+    470,
+    385,
+    880,
+    600
+   ],
+   "3": [
+    430,
+    440,
+    850,
+    605
+   ]
+  }
+ },
+ "costosVerticales": {
+  "ascensor": 90,
+  "escalera": 40
+ },
+ "nodos": [
+  {
+   "id": "P1-C01",
+   "piso": 1,
+   "x": 724.531,
+   "y": 400.5,
+   "tipo": "pasillo",
+   "nombre": "Plazoleta norte (frente a escaleras)"
+  },
+  {
+   "id": "P1-C02",
+   "piso": 1,
+   "x": 727.531,
+   "y": 476.5,
+   "tipo": "pasillo",
+   "nombre": "Plazoleta central"
+  },
+  {
+   "id": "P1-C03",
+   "piso": 1,
+   "x": 727.531,
+   "y": 527.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C03"
+  },
+  {
+   "id": "P1-C04",
+   "piso": 1,
+   "x": 673.531,
+   "y": 413.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C04"
+  },
+  {
+   "id": "P1-C05",
+   "piso": 1,
+   "x": 682.531,
+   "y": 443.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C05"
+  },
+  {
+   "id": "P1-C06",
+   "piso": 1,
+   "x": 642.531,
+   "y": 444.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C06"
+  },
+  {
+   "id": "P1-C07",
+   "piso": 1,
+   "x": 614.531,
+   "y": 472.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C07"
+  },
+  {
+   "id": "P1-C08",
+   "piso": 1,
+   "x": 588.531,
+   "y": 499.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C08"
+  },
+  {
+   "id": "P1-C09",
+   "piso": 1,
+   "x": 560.531,
+   "y": 527.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C09"
+  },
+  {
+   "id": "P1-C10",
+   "piso": 1,
+   "x": 582.531,
+   "y": 556.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C10"
+  },
+  {
+   "id": "P1-C11",
+   "piso": 1,
+   "x": 766.531,
+   "y": 440.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C11"
+  },
+  {
+   "id": "P1-C12",
+   "piso": 1,
+   "x": 801.531,
+   "y": 444.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C12"
+  },
+  {
+   "id": "P1-C13",
+   "piso": 1,
+   "x": 825.531,
+   "y": 468.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C13"
+  },
+  {
+   "id": "P1-C14",
+   "piso": 1,
+   "x": 851.531,
+   "y": 494.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C14"
+  },
+  {
+   "id": "P1-C15",
+   "piso": 1,
+   "x": 875.531,
+   "y": 518.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C15"
+  },
+  {
+   "id": "P1-C16",
+   "piso": 1,
+   "x": 878.531,
+   "y": 542.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C16"
+  },
+  {
+   "id": "P1-C17",
+   "piso": 1,
+   "x": 865.531,
+   "y": 556.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C17"
+  },
+  {
+   "id": "P1-C18",
+   "piso": 1,
+   "x": 643.531,
+   "y": 382.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo noroeste (punto de referencia)"
+  },
+  {
+   "id": "P1-C19",
+   "piso": 1,
+   "x": 797.531,
+   "y": 390.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C19"
+  },
+  {
+   "id": "P1-E01",
+   "piso": 1,
+   "x": 713.531,
+   "y": 549.5,
+   "tipo": "entrada",
+   "nombre": "Entrada sur (oeste)"
+  },
+  {
+   "id": "P1-E02",
+   "piso": 1,
+   "x": 741.531,
+   "y": 549.5,
+   "tipo": "entrada",
+   "nombre": "Entrada sur (este)"
+  },
+  {
+   "id": "P1-ASC",
+   "piso": 1,
+   "x": 727.531,
+   "y": 548.5,
+   "tipo": "ascensor",
+   "nombre": "Ascensor central sur"
+  },
+  {
+   "id": "P1-ESC",
+   "piso": 1,
+   "x": 727.531,
+   "y": 424.5,
+   "tipo": "escalera",
+   "nombre": "Escaleras centrales"
+  },
+  {
+   "id": "P1-B01",
+   "piso": 1,
+   "x": 558.531,
+   "y": 538.5,
+   "tipo": "bano",
+   "nombre": "Baños sector oeste"
+  },
+  {
+   "id": "P1-B02",
+   "piso": 1,
+   "x": 887.531,
+   "y": 542.5,
+   "tipo": "bano",
+   "nombre": "Baños sector este"
+  },
+  {
+   "id": "P1-L01",
+   "piso": 1,
+   "x": 691.531,
+   "y": 477.5,
+   "tipo": "local",
+   "nombre": "Local L01"
+  },
+  {
+   "id": "P1-L02",
+   "piso": 1,
+   "x": 664.531,
+   "y": 450.5,
+   "tipo": "local",
+   "nombre": "Local L02"
+  },
+  {
+   "id": "P1-L03",
+   "piso": 1,
+   "x": 642.531,
+   "y": 415.5,
+   "tipo": "local",
+   "nombre": "Local L03"
+  },
+  {
+   "id": "P1-L04",
+   "piso": 1,
+   "x": 709.531,
+   "y": 539.5,
+   "tipo": "local",
+   "nombre": "Local L04"
+  },
+  {
+   "id": "P1-L05",
+   "piso": 1,
+   "x": 744.531,
+   "y": 539.5,
+   "tipo": "local",
+   "nombre": "Local L05"
+  },
+  {
+   "id": "P1-L06",
+   "piso": 1,
+   "x": 758.531,
+   "y": 477.5,
+   "tipo": "local",
+   "nombre": "Local L06"
+  },
+  {
+   "id": "P1-L07",
+   "piso": 1,
+   "x": 782.531,
+   "y": 452.5,
+   "tipo": "local",
+   "nombre": "Local L07"
+  },
+  {
+   "id": "P1-L08",
+   "piso": 1,
+   "x": 808.531,
+   "y": 415.5,
+   "tipo": "local",
+   "nombre": "Local L08"
+  },
+  {
+   "id": "P1-L09",
+   "piso": 1,
+   "x": 684.531,
+   "y": 592.5,
+   "tipo": "local",
+   "nombre": "Local L09"
+  },
+  {
+   "id": "P1-L10",
+   "piso": 1,
+   "x": 766.531,
+   "y": 592.5,
+   "tipo": "local",
+   "nombre": "Local L10"
+  },
+  {
+   "id": "P2-C01",
+   "piso": 2,
+   "x": 736,
+   "y": 416.554,
+   "tipo": "pasillo",
+   "nombre": "Plazoleta norte del piso 2"
+  },
+  {
+   "id": "P2-C02",
+   "piso": 2,
+   "x": 713,
+   "y": 428.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C02"
+  },
+  {
+   "id": "P2-C03",
+   "piso": 2,
+   "x": 694,
+   "y": 429.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C03"
+  },
+  {
+   "id": "P2-C04",
+   "piso": 2,
+   "x": 763,
+   "y": 434.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C04"
+  },
+  {
+   "id": "P2-C05",
+   "piso": 2,
+   "x": 692,
+   "y": 451.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C05"
+  },
+  {
+   "id": "P2-C06",
+   "piso": 2,
+   "x": 671,
+   "y": 468.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C06"
+  },
+  {
+   "id": "P2-C07",
+   "piso": 2,
+   "x": 682,
+   "y": 479.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C07"
+  },
+  {
+   "id": "P2-C08",
+   "piso": 2,
+   "x": 698,
+   "y": 495.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C08"
+  },
+  {
+   "id": "P2-C09",
+   "piso": 2,
+   "x": 717,
+   "y": 510.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C09"
+  },
+  {
+   "id": "P2-C10",
+   "piso": 2,
+   "x": 736,
+   "y": 520.554,
+   "tipo": "pasillo",
+   "nombre": "Hall sur del piso 2"
+  },
+  {
+   "id": "P2-C11",
+   "piso": 2,
+   "x": 755,
+   "y": 508.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C11"
+  },
+  {
+   "id": "P2-C12",
+   "piso": 2,
+   "x": 771,
+   "y": 491.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C12"
+  },
+  {
+   "id": "P2-C13",
+   "piso": 2,
+   "x": 791,
+   "y": 473.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C13"
+  },
+  {
+   "id": "P2-C14",
+   "piso": 2,
+   "x": 781,
+   "y": 451.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C14"
+  },
+  {
+   "id": "P2-C15",
+   "piso": 2,
+   "x": 652,
+   "y": 455.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C15"
+  },
+  {
+   "id": "P2-C16",
+   "piso": 2,
+   "x": 638,
+   "y": 508.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C16"
+  },
+  {
+   "id": "P2-C17",
+   "piso": 2,
+   "x": 619,
+   "y": 524.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C17"
+  },
+  {
+   "id": "P2-C18",
+   "piso": 2,
+   "x": 812,
+   "y": 488.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C18"
+  },
+  {
+   "id": "P2-C19",
+   "piso": 2,
+   "x": 840,
+   "y": 517.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C19"
+  },
+  {
+   "id": "P2-C20",
+   "piso": 2,
+   "x": 864,
+   "y": 551.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C20"
+  },
+  {
+   "id": "P2-C21",
+   "piso": 2,
+   "x": 581,
+   "y": 529.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C21"
+  },
+  {
+   "id": "P2-C22",
+   "piso": 2,
+   "x": 521,
+   "y": 537.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C22"
+  },
+  {
+   "id": "P2-C23",
+   "piso": 2,
+   "x": 509,
+   "y": 551.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C23"
+  },
+  {
+   "id": "P2-C24",
+   "piso": 2,
+   "x": 785,
+   "y": 416.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C24"
+  },
+  {
+   "id": "P2-C25",
+   "piso": 2,
+   "x": 635,
+   "y": 436.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C25"
+  },
+  {
+   "id": "P2-C27",
+   "piso": 2,
+   "x": 656,
+   "y": 491.554,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C27"
+  },
+  {
+   "id": "P2-ESC12",
+   "piso": 2,
+   "x": 741,
+   "y": 457.554,
+   "tipo": "escalera",
+   "nombre": "Escaleras centrales (llegan del piso 1)"
+  },
+  {
+   "id": "P2-ESC23A",
+   "piso": 2,
+   "x": 725,
+   "y": 564.554,
+   "tipo": "escalera",
+   "nombre": "Escalera sur oeste (hacia piso 3)"
+  },
+  {
+   "id": "P2-ESC23B",
+   "piso": 2,
+   "x": 748,
+   "y": 564.554,
+   "tipo": "escalera",
+   "nombre": "Escalera sur este (hacia piso 3)"
+  },
+  {
+   "id": "P2-ASC",
+   "piso": 2,
+   "x": 737,
+   "y": 585.554,
+   "tipo": "ascensor",
+   "nombre": "Ascensor central sur"
+  },
+  {
+   "id": "P2-B01",
+   "piso": 2,
+   "x": 491,
+   "y": 556.554,
+   "tipo": "bano",
+   "nombre": "Baños sector oeste"
+  },
+  {
+   "id": "P2-L01",
+   "piso": 2,
+   "x": 704,
+   "y": 516.554,
+   "tipo": "local",
+   "nombre": "Local L01"
+  },
+  {
+   "id": "P2-L02",
+   "piso": 2,
+   "x": 716,
+   "y": 530.554,
+   "tipo": "local",
+   "nombre": "Local L02"
+  },
+  {
+   "id": "P2-L03",
+   "piso": 2,
+   "x": 687,
+   "y": 500.554,
+   "tipo": "local",
+   "nombre": "Local L03"
+  },
+  {
+   "id": "P2-L04",
+   "piso": 2,
+   "x": 752,
+   "y": 528.554,
+   "tipo": "local",
+   "nombre": "Local L04"
+  },
+  {
+   "id": "P2-L05",
+   "piso": 2,
+   "x": 769,
+   "y": 518.554,
+   "tipo": "local",
+   "nombre": "Local L05"
+  },
+  {
+   "id": "P2-L06",
+   "piso": 2,
+   "x": 651,
+   "y": 483.554,
+   "tipo": "local",
+   "nombre": "Local L06"
+  },
+  {
+   "id": "P2-L07",
+   "piso": 2,
+   "x": 623,
+   "y": 510.554,
+   "tipo": "local",
+   "nombre": "Local L07"
+  },
+  {
+   "id": "P2-L08",
+   "piso": 2,
+   "x": 808,
+   "y": 499.554,
+   "tipo": "local",
+   "nombre": "Local L08"
+  },
+  {
+   "id": "P2-L09",
+   "piso": 2,
+   "x": 822,
+   "y": 484.554,
+   "tipo": "local",
+   "nombre": "Local L09"
+  },
+  {
+   "id": "P2-L10",
+   "piso": 2,
+   "x": 734,
+   "y": 406.554,
+   "tipo": "local",
+   "nombre": "Local L10"
+  },
+  {
+   "id": "P2-L11",
+   "piso": 2,
+   "x": 842,
+   "y": 535.554,
+   "tipo": "local",
+   "nombre": "Local L11"
+  },
+  {
+   "id": "P3-C01",
+   "piso": 3,
+   "x": 648.5,
+   "y": 585.5,
+   "tipo": "pasillo",
+   "nombre": "Hall del ascensor piso 3"
+  },
+  {
+   "id": "P3-C02",
+   "piso": 3,
+   "x": 612.5,
+   "y": 585.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C02"
+  },
+  {
+   "id": "P3-C03",
+   "piso": 3,
+   "x": 583.5,
+   "y": 587.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C03"
+  },
+  {
+   "id": "P3-C04",
+   "piso": 3,
+   "x": 557.5,
+   "y": 587.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C04"
+  },
+  {
+   "id": "P3-C05",
+   "piso": 3,
+   "x": 530.5,
+   "y": 579.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C05"
+  },
+  {
+   "id": "P3-C06",
+   "piso": 3,
+   "x": 510.5,
+   "y": 563.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C06"
+  },
+  {
+   "id": "P3-C07",
+   "piso": 3,
+   "x": 498.5,
+   "y": 543.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C07"
+  },
+  {
+   "id": "P3-C08",
+   "piso": 3,
+   "x": 490.5,
+   "y": 527.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C08"
+  },
+  {
+   "id": "P3-C09",
+   "piso": 3,
+   "x": 471.5,
+   "y": 509.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C09"
+  },
+  {
+   "id": "P3-C10",
+   "piso": 3,
+   "x": 461.5,
+   "y": 487.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C10"
+  },
+  {
+   "id": "P3-C11",
+   "piso": 3,
+   "x": 452.5,
+   "y": 477.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C11"
+  },
+  {
+   "id": "P3-C12",
+   "piso": 3,
+   "x": 689.5,
+   "y": 585.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C12"
+  },
+  {
+   "id": "P3-C13",
+   "piso": 3,
+   "x": 712.5,
+   "y": 585.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C13"
+  },
+  {
+   "id": "P3-C14",
+   "piso": 3,
+   "x": 740.5,
+   "y": 585.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C14"
+  },
+  {
+   "id": "P3-C15",
+   "piso": 3,
+   "x": 764.5,
+   "y": 577.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C15"
+  },
+  {
+   "id": "P3-C16",
+   "piso": 3,
+   "x": 789.5,
+   "y": 565.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C16"
+  },
+  {
+   "id": "P3-C17",
+   "piso": 3,
+   "x": 799.5,
+   "y": 545.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C17"
+  },
+  {
+   "id": "P3-C18",
+   "piso": 3,
+   "x": 808.5,
+   "y": 524.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C18"
+  },
+  {
+   "id": "P3-C19",
+   "piso": 3,
+   "x": 811.5,
+   "y": 505.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C19"
+  },
+  {
+   "id": "P3-C20",
+   "piso": 3,
+   "x": 815.5,
+   "y": 483.5,
+   "tipo": "pasillo",
+   "nombre": "Pasillo C20"
+  },
+  {
+   "id": "P3-ASC",
+   "piso": 3,
+   "x": 648.5,
+   "y": 563.5,
+   "tipo": "ascensor",
+   "nombre": "Ascensor central sur"
+  },
+  {
+   "id": "P3-ESCA",
+   "piso": 3,
+   "x": 635.5,
+   "y": 570.5,
+   "tipo": "escalera",
+   "nombre": "Escalera sur oeste"
+  },
+  {
+   "id": "P3-ESCB",
+   "piso": 3,
+   "x": 659.5,
+   "y": 570.5,
+   "tipo": "escalera",
+   "nombre": "Escalera sur este"
+  },
+  {
+   "id": "P3-B01",
+   "piso": 3,
+   "x": 457.5,
+   "y": 459.5,
+   "tipo": "bano",
+   "nombre": "Baños sector oeste"
+  },
+  {
+   "id": "P3-L01",
+   "piso": 3,
+   "x": 608.5,
+   "y": 564.5,
+   "tipo": "local",
+   "nombre": "Local L01"
+  },
+  {
+   "id": "P3-L02",
+   "piso": 3,
+   "x": 583.5,
+   "y": 564.5,
+   "tipo": "local",
+   "nombre": "Local L02"
+  },
+  {
+   "id": "P3-L03",
+   "piso": 3,
+   "x": 553.5,
+   "y": 561.5,
+   "tipo": "local",
+   "nombre": "Local L03"
+  },
+  {
+   "id": "P3-L04",
+   "piso": 3,
+   "x": 530.5,
+   "y": 554.5,
+   "tipo": "local",
+   "nombre": "Local L04"
+  },
+  {
+   "id": "P3-L05",
+   "piso": 3,
+   "x": 515.5,
+   "y": 542.5,
+   "tipo": "local",
+   "nombre": "Local L05"
+  },
+  {
+   "id": "P3-L06",
+   "piso": 3,
+   "x": 501.5,
+   "y": 528.5,
+   "tipo": "local",
+   "nombre": "Local L06"
+  },
+  {
+   "id": "P3-L07",
+   "piso": 3,
+   "x": 488.5,
+   "y": 514.5,
+   "tipo": "local",
+   "nombre": "Local L07"
+  },
+  {
+   "id": "P3-L08",
+   "piso": 3,
+   "x": 689.5,
+   "y": 564.5,
+   "tipo": "local",
+   "nombre": "Local L08"
+  },
+  {
+   "id": "P3-L09",
+   "piso": 3,
+   "x": 714.5,
+   "y": 564.5,
+   "tipo": "local",
+   "nombre": "Local L09"
+  },
+  {
+   "id": "P3-L10",
+   "piso": 3,
+   "x": 750.5,
+   "y": 561.5,
+   "tipo": "local",
+   "nombre": "Local L10"
+  },
+  {
+   "id": "P3-L11",
+   "piso": 3,
+   "x": 768.5,
+   "y": 551.5,
+   "tipo": "local",
+   "nombre": "Local L11"
+  },
+  {
+   "id": "P3-L12",
+   "piso": 3,
+   "x": 781.5,
+   "y": 539.5,
+   "tipo": "local",
+   "nombre": "Local L12"
+  },
+  {
+   "id": "P3-L13",
+   "piso": 3,
+   "x": 795.5,
+   "y": 526.5,
+   "tipo": "local",
+   "nombre": "Local L13"
+  },
+  {
+   "id": "P3-L14",
+   "piso": 3,
+   "x": 826.5,
+   "y": 472.5,
+   "tipo": "local",
+   "nombre": "Local L14"
+  }
+ ],
+ "conexiones": [
+  {
+   "origen": "P1-L01",
+   "destino": "P1-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L02",
+   "destino": "P1-C05",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L03",
+   "destino": "P1-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L04",
+   "destino": "P1-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L05",
+   "destino": "P1-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L06",
+   "destino": "P1-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L07",
+   "destino": "P1-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L08",
+   "destino": "P1-C19",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L09",
+   "destino": "P1-E01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-L10",
+   "destino": "P1-E02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C18",
+   "destino": "P1-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C04",
+   "destino": "P1-C05",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C05",
+   "destino": "P1-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C05",
+   "destino": "P1-C06",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C06",
+   "destino": "P1-C07",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C07",
+   "destino": "P1-C08",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C08",
+   "destino": "P1-C09",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C09",
+   "destino": "P1-C10",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C04",
+   "destino": "P1-C01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C01",
+   "destino": "P1-ESC",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-ESC",
+   "destino": "P1-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C02",
+   "destino": "P1-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C03",
+   "destino": "P1-ASC",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C03",
+   "destino": "P1-E01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C03",
+   "destino": "P1-E02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C01",
+   "destino": "P1-C19",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C19",
+   "destino": "P1-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C02",
+   "destino": "P1-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C11",
+   "destino": "P1-C12",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C12",
+   "destino": "P1-C13",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C13",
+   "destino": "P1-C14",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C14",
+   "destino": "P1-C15",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C15",
+   "destino": "P1-C16",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C16",
+   "destino": "P1-C17",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C09",
+   "destino": "P1-B01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-C16",
+   "destino": "P1-B02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L01",
+   "destino": "P2-C09",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L02",
+   "destino": "P2-C10",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L03",
+   "destino": "P2-C08",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L04",
+   "destino": "P2-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L05",
+   "destino": "P2-C12",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L06",
+   "destino": "P2-C27",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L07",
+   "destino": "P2-C17",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L08",
+   "destino": "P2-C18",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L09",
+   "destino": "P2-C18",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L10",
+   "destino": "P2-C01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-L11",
+   "destino": "P2-C19",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C01",
+   "destino": "P2-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C02",
+   "destino": "P2-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C03",
+   "destino": "P2-C05",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C05",
+   "destino": "P2-C06",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C06",
+   "destino": "P2-C07",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C07",
+   "destino": "P2-C08",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C08",
+   "destino": "P2-C09",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C09",
+   "destino": "P2-C10",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C10",
+   "destino": "P2-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C11",
+   "destino": "P2-C12",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C12",
+   "destino": "P2-C13",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C13",
+   "destino": "P2-C14",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C14",
+   "destino": "P2-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C04",
+   "destino": "P2-C01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C04",
+   "destino": "P2-C24",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-ESC12",
+   "destino": "P2-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-ESC12",
+   "destino": "P2-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C06",
+   "destino": "P2-C15",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C15",
+   "destino": "P2-C25",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C15",
+   "destino": "P2-C27",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C27",
+   "destino": "P2-C16",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C16",
+   "destino": "P2-C17",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C17",
+   "destino": "P2-C21",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C21",
+   "destino": "P2-C22",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C22",
+   "destino": "P2-C23",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C23",
+   "destino": "P2-B01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C12",
+   "destino": "P2-C18",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C18",
+   "destino": "P2-C19",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C19",
+   "destino": "P2-C20",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C10",
+   "destino": "P2-ESC23A",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C10",
+   "destino": "P2-ESC23B",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-C10",
+   "destino": "P2-ASC",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L01",
+   "destino": "P3-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L02",
+   "destino": "P3-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L03",
+   "destino": "P3-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L04",
+   "destino": "P3-C05",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L05",
+   "destino": "P3-C06",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L06",
+   "destino": "P3-C07",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L07",
+   "destino": "P3-C08",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L08",
+   "destino": "P3-C12",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L09",
+   "destino": "P3-C13",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L10",
+   "destino": "P3-C14",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L11",
+   "destino": "P3-C15",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L12",
+   "destino": "P3-C16",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L13",
+   "destino": "P3-C18",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-L14",
+   "destino": "P3-C20",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C01",
+   "destino": "P3-C02",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C02",
+   "destino": "P3-C03",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C03",
+   "destino": "P3-C04",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C04",
+   "destino": "P3-C05",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C05",
+   "destino": "P3-C06",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C06",
+   "destino": "P3-C07",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C07",
+   "destino": "P3-C08",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C08",
+   "destino": "P3-C09",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C09",
+   "destino": "P3-C10",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C10",
+   "destino": "P3-C11",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C11",
+   "destino": "P3-B01",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C01",
+   "destino": "P3-C12",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C12",
+   "destino": "P3-C13",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C13",
+   "destino": "P3-C14",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C14",
+   "destino": "P3-C15",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C15",
+   "destino": "P3-C16",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C16",
+   "destino": "P3-C17",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C17",
+   "destino": "P3-C18",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C18",
+   "destino": "P3-C19",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C19",
+   "destino": "P3-C20",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C01",
+   "destino": "P3-ASC",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C01",
+   "destino": "P3-ESCA",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P3-C01",
+   "destino": "P3-ESCB",
+   "tipo": "pasillo",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-ESC",
+   "destino": "P2-ESC12",
+   "tipo": "escalera",
+   "bidireccional": true
+  },
+  {
+   "origen": "P1-ASC",
+   "destino": "P2-ASC",
+   "tipo": "ascensor",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-ASC",
+   "destino": "P3-ASC",
+   "tipo": "ascensor",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-ESC23A",
+   "destino": "P3-ESCA",
+   "tipo": "escalera",
+   "bidireccional": true
+  },
+  {
+   "origen": "P2-ESC23B",
+   "destino": "P3-ESCB",
+   "tipo": "escalera",
+   "bidireccional": true
+  }
+ ]
+}

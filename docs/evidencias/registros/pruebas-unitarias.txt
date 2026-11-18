@@ -1,0 +1,29 @@
+v24.22.3
+
+> mallmapai@1.0.0 test:unit
+> node --test "tests/unit/*.test.js"
+
+✔ U-01 elige el camino de menor costo y no el de menos saltos (3.686387ms)
+✔ U-02 respeta el sentido: C -> D existe, D -> C no (0.659232ms)
+✔ U-03 origen igual al destino devuelve costo 0 (0.139009ms)
+✔ U-04 nodo inexistente produce NODO_INEXISTENTE (0.230221ms)
+✔ U-05 nodo aislado (desconectado) produce RUTA_NO_ENCONTRADA (0.32847ms)
+✔ U-06 datos vacíos producen DATOS_INCOMPLETOS (0.146065ms)
+✔ U-07 "evitar escaleras" quita las escaleras antes de calcular (0.357669ms)
+✔ U-08 costos negativos o inválidos se rechazan (0.145317ms)
+✔ U-09 con el grafo real: piso 1 -> piso 3 usa escaleras sin filtro y ascensor con filtro (3.685647ms)
+✔ U-10 todas las conexiones del grafo apuntan a nodos existentes y no hay nodos sueltos (0.79041ms)
+✔ V-01 acepta una promoción válida y limpia espacios (1.930504ms)
+✔ V-02 rechaza título vacío (0.729838ms)
+✔ V-03 rechaza fechas que no existen o con otro formato (0.562955ms)
+✔ V-04 rechaza fecha final anterior a la inicial (2.285436ms)
+✔ V-05 rechaza tipos incorrectos (0.578154ms)
+✔ V-06 ruta sin destino da un aviso claro (0.3634ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 223.584721

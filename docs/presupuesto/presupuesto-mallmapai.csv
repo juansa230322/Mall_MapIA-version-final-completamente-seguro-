@@ -1,0 +1,24 @@
+﻿tipo;fase;descripcion;responsable_o_unidad;horas_o_cantidad;tarifa_o_valor_unitario_COP;subtotal_COP
+Actividad;F1;Análisis: requisitos, encuesta y revisión de planos;Equipo (3);36;30000;1080000
+Actividad;F1;Anotación del grafo sobre los SVG (nodos y conexiones);Eduardo;14;30000;420000
+Actividad;F2;Modelo relacional, esquema SQL y carga inicial;Eduardo;14;30000;420000
+Actividad;F2;Configuración PostgreSQL (Docker / Windows / Supabase);Eduardo;6;30000;180000
+Actividad;F3;API REST Express, validaciones y manejo de errores;Eduardo;22;30000;660000
+Actividad;F3;Importador Python y fuentes de muestra;Juan Pablo;14;30000;420000
+Actividad;F4;Interfaz React: mapa, zoom, marcadores y leyenda;María Fernanda;30;30000;900000
+Actividad;F4;Planificador, recorrido y vista de ofertas;María Fernanda;18;30000;540000
+Actividad;F4;Módulo Dijkstra e indicaciones;María Fernanda;10;30000;300000
+Actividad;F5;Pruebas unitarias, integración y E2E (Playwright);Juan Pablo;20;30000;600000
+Actividad;F5;Pruebas de caída de la base y móvil 390 px;Juan Pablo;6;30000;180000
+Actividad;F6;Informe técnico, UML y manual de usuario;Equipo (3);24;30000;720000
+Actividad;F6;Guion, video y ensayo de sustentación;Equipo (3);9;30000;270000
+Recurso;-;Computadores personales (3) - uso proporcional 12 semanas;mes-equipo;9;60000;540000
+Recurso;-;Internet y energía (3 hogares) - parte proporcional;mes;9;35000;315000
+Recurso;-;Supabase plan Free (piloto);mes;3;0;0
+Recurso;-;GitHub (repositorio privado, plan gratuito);mes;3;0;0
+Recurso;-;Transporte a Unicentro para validación en sitio (3 personas x 2 visitas);viaje;12;6000;72000
+Subtotal;;Talento humano;;223;;6690000
+Subtotal;;Recursos;;;;927000
+Subtotal;;Total antes de contingencia;;;;7617000
+Contingencia;;10% sobre el subtotal;;;;761700
+TOTAL;;Presupuesto total del prototipo;;;;8378700

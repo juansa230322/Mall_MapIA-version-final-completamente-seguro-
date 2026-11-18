@@ -1,0 +1,32 @@
+### Primera ejecución
+Importación de promociones — 2026-11-18
+
+[fuente_a] fuente_a.html: 4 ofertas leídas
+  insertadas: 3 | actualizadas: 0 | rechazadas: 1
+  ! rechazada 'Oferta con fecha imposible': Hay datos inválidos en la promoción. fechaInicio: Usa una fecha real con formato AAAA-MM-DD.
+
+[fuente_b] fuente_b.html: 3 ofertas leídas
+  insertadas: 3 | actualizadas: 0 | rechazadas: 0
+
+TOTAL -> insertadas: 6 | actualizadas: 0 | rechazadas: 1
+
+### Segunda ejecución (misma carga)
+Importación de promociones — 2026-11-18
+
+[fuente_a] fuente_a.html: 4 ofertas leídas
+  insertadas: 0 | actualizadas: 3 | rechazadas: 1
+  ! rechazada 'Oferta con fecha imposible': Hay datos inválidos en la promoción. fechaInicio: Usa una fecha real con formato AAAA-MM-DD.
+
+[fuente_b] fuente_b.html: 3 ofertas leídas
+  insertadas: 0 | actualizadas: 3 | rechazadas: 0
+
+TOTAL -> insertadas: 0 | actualizadas: 6 | rechazadas: 1
+
+### Conteo en la base después de las dos ejecuciones
+       origen        | ofertas 
+---------------------+---------
+ importador:fuente_a |       3
+ importador:fuente_b |       3
+ semilla             |       7
+(3 rows)
+

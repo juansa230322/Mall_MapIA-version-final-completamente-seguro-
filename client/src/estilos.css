@@ -1,0 +1,144 @@
+/* MallMapAI — estilos. Móvil primero; dos columnas desde 900 px. */
+:root {
+  --primario: #0b5d6b;
+  --primario-oscuro: #07424c;
+  --ruta: #ff6a00;
+  --texto: #1d2329;
+  --suave: #5b6670;
+  --fondo: #f4f6f7;
+  --tarjeta: #ffffff;
+  --borde: #d5dbe0;
+  --foco: #ffbf00;
+  --error: #b42318;
+  --aviso: #8a5a00;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+  line-height: 1.45;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5rem; }
+h2 { font-size: 1.1rem; }
+button, select, input { font: inherit; }
+:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.saltar { position: absolute; left: -999px; top: 0; background: #fff; padding: .5rem 1rem; z-index: 10; }
+.saltar:focus { left: .5rem; }
+
+.cabecera {
+  display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; justify-content: space-between;
+  padding: .75rem 1rem; background: var(--primario); color: #fff;
+}
+.cabecera h1 { font-size: 1.35rem; margin: 0; }
+.cabecera p { margin: 0; font-size: .85rem; opacity: .9; }
+.cabecera nav { display: flex; gap: .25rem; }
+.cabecera nav button {
+  background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+  padding: .4rem .9rem; cursor: pointer; min-height: 40px;
+}
+.cabecera nav button[aria-current="page"] { background: #fff; color: var(--primario); font-weight: 700; }
+.banda { margin: 0; padding: .4rem 1rem; background: #fff4d6; color: #5a4300; font-size: .85rem; border-bottom: 1px solid #f0dca0; }
+
+main { padding: .75rem; max-width: 1400px; margin: 0 auto; }
+.distribucion { display: grid; gap: .75rem; }
+.lateral { display: grid; gap: .75rem; align-content: start; }
+@media (min-width: 900px) {
+  .distribucion { grid-template-columns: 340px 1fr; align-items: start; }
+  .lateral { position: sticky; top: .75rem; }
+}
+
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 1rem; }
+.planificador form { display: grid; gap: .45rem; }
+.planificador label { font-weight: 600; font-size: .9rem; }
+.planificador select { width: 100%; padding: .55rem; border: 1px solid #9aa6b0; border-radius: 8px; background: #fff; min-height: 44px; }
+.casilla { display: flex; gap: .6rem; align-items: flex-start; font-weight: 600; margin-top: .3rem; cursor: pointer; }
+.casilla input { width: 22px; height: 22px; margin-top: 2px; }
+.casilla small { display: block; font-weight: 400; color: var(--suave); }
+.pista { font-size: .8rem; color: var(--suave); margin: .6rem 0 0; }
+
+button { cursor: pointer; }
+.boton-principal {
+  background: var(--primario); color: #fff; border: 0; border-radius: 8px; padding: .65rem 1rem; font-weight: 700; min-height: 44px;
+}
+.boton-principal:hover { background: var(--primario-oscuro); }
+.boton-principal:disabled { opacity: .6; cursor: progress; }
+.boton-texto { background: none; border: 0; color: var(--primario); justify-self: start; padding: .2rem 0; min-height: 32px; }
+.boton-texto:disabled { color: #9aa6b0; }
+
+.estado { display: flex; gap: .75rem; align-items: center; justify-content: space-between; padding: .7rem .9rem; border-radius: 10px; background: #e8f3f5; border: 1px solid #b7d9de; }
+.estado--error { background: #fdecea; border-color: #f3b4ae; color: var(--error); }
+.estado--aviso { background: #fff4d6; border-color: #f0d38a; color: var(--aviso); }
+.estado button { border: 1px solid currentColor; background: #fff; color: inherit; border-radius: 8px; padding: .35rem .8rem; min-height: 36px; }
+
+.zona-mapa { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: .75rem; display: grid; gap: .6rem; scroll-margin-top: .5rem; }
+.zona-mapa__cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .5rem; }
+.zona-mapa__cabecera h2 { margin: 0; }
+.selector-piso { display: flex; gap: .25rem; }
+.selector-piso button, .recorrido__pisos button {
+  border: 1px solid var(--primario); background: #fff; color: var(--primario); border-radius: 8px; padding: .4rem .7rem; min-height: 40px;
+}
+.selector-piso button[aria-pressed="true"], .recorrido__pisos button[aria-pressed="true"] { background: var(--primario); color: #fff; font-weight: 700; }
+.selector-piso button.en-ruta { box-shadow: inset 0 -4px 0 var(--ruta); }
+
+.mapa { display: grid; gap: .4rem; }
+.mapa__controles { display: flex; flex-wrap: wrap; gap: .3rem; }
+.mapa__controles button { border: 1px solid #9aa6b0; background: #fff; border-radius: 8px; min-width: 44px; min-height: 40px; padding: 0 .7rem; }
+.mapa__lienzo { position: relative; width: 100%; height: min(62vh, 640px); min-height: 320px; border-radius: 10px; overflow: hidden; background: #e9edf0; border: 1px solid var(--borde); }
+.mapa__svg { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; user-select: none; }
+.mapa__svg:active { cursor: grabbing; }
+.mapa__sector { fill: rgba(11, 93, 107, .05); stroke: var(--primario); }
+.mapa__sector-texto { fill: var(--primario); font-weight: 700; }
+.mapa__ruta-borde { fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; }
+.mapa__ruta { fill: none; stroke: var(--ruta); stroke-linecap: round; stroke-linejoin: round; }
+.marcador { cursor: pointer; }
+.marcador:focus { outline: none; }
+.marcador:focus-visible circle:last-of-type, .marcador--activo circle:last-of-type { stroke: var(--foco); stroke-width: 2.5; }
+.marcador__halo-origen { fill: rgba(2, 181, 42, .3); stroke: #02b52a; stroke-width: 1; }
+.marcador__halo-destino { fill: rgba(255, 106, 0, .3); stroke: var(--ruta); stroke-width: 1; }
+
+.seleccion { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: space-between; align-items: center; padding: .7rem; border-radius: 10px; background: #f0f6f7; border: 1px solid #b7d9de; }
+.seleccion strong { display: block; }
+.seleccion__meta, .seleccion__ofertas { display: block; font-size: .85rem; color: var(--suave); }
+.seleccion__ofertas { color: var(--primario); font-weight: 600; }
+.seleccion__acciones { display: flex; gap: .4rem; align-items: center; }
+.seleccion__acciones button:not(.boton-principal):not(.boton-texto) { border: 1px solid var(--primario); background: #fff; color: var(--primario); border-radius: 8px; padding: .55rem .8rem; min-height: 44px; }
+
+.leyenda h3 { font-size: .95rem; }
+.leyenda ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem .9rem; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); font-size: .88rem; }
+.leyenda li { display: flex; align-items: center; gap: .5rem; }
+.leyenda__icono { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid #111; font-size: .75rem; font-weight: 700; flex: none; }
+.leyenda__ruta { width: 28px; height: 6px; border-radius: 3px; background: var(--ruta); outline: 2px solid #fff; flex: none; }
+
+.recorrido__resumen { margin: 0 0 .5rem; color: var(--suave); }
+.recorrido__pisos { display: flex; flex-wrap: wrap; gap: .3rem; margin-bottom: .5rem; }
+.recorrido__pasos { margin: 0; padding-left: 1.3rem; display: grid; gap: .35rem; }
+.nota { font-size: .82rem; background: #f4f6f7; border-left: 4px solid var(--primario); padding: .5rem .7rem; margin: .75rem 0 0; }
+
+.seccion-ofertas h2 { font-size: 1.25rem; }
+.ofertas { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.oferta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; gap: .35rem; }
+.oferta__cabecera { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+.oferta__tienda { font-weight: 700; color: var(--primario); }
+.oferta__descuento { background: var(--ruta); color: #fff; font-weight: 800; border-radius: 6px; padding: .1rem .45rem; }
+.oferta h3 { font-size: 1.05rem; margin: 0; }
+.oferta p { margin: 0; }
+.oferta__meta { font-size: .85rem; color: var(--suave); }
+.oferta__etiqueta { font-size: .75rem; color: #6b5a00; }
+.oferta .boton-principal { margin-top: auto; align-self: start; }
+.vacio { padding: 2rem 1rem; text-align: center; color: var(--suave); }
+
+.alcance ul { padding-left: 1.2rem; display: grid; gap: .4rem; }
+.pie { text-align: center; font-size: .8rem; color: var(--suave); padding: 1rem; }
+
+@media (max-width: 480px) {
+  .cabecera { padding: .6rem .75rem; }
+  .cabecera nav { width: 100%; }
+  .cabecera nav button { flex: 1; padding: .4rem .3rem; }
+  main { padding: .5rem; }
+  .mapa__lienzo { height: 58vh; }
+  .mapa__controles button { min-width: 40px; padding: 0 .5rem; font-size: .9rem; }
+  .seleccion__acciones { width: 100%; }
+  .seleccion__acciones button { flex: 1; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }

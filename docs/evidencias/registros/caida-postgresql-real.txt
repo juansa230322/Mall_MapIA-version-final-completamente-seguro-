@@ -1,0 +1,26 @@
+API: http://localhost:3000/api/v1
+2026-11-18T19:43:29.897Z  1. Antes: GET /ofertas             HTTP 200     89 ms  12 ofertas
+  ✓ responde 200 con la base encendida
+
+> su postgres -c '/usr/lib/postgresql/16/bin/pg_ctl -D /var/pg/data -m fast stop'
+waiting for server to shut down.... done
+server stopped
+2026-11-18T19:43:31.523Z  2. Base detenida: GET /ofertas     HTTP 503      5 ms  BD_NO_DISPONIBLE
+  ✓ responde 503 BD_NO_DISPONIBLE
+2026-11-18T19:43:31.532Z  3. Base detenida: POST /rutas      HTTP 503      9 ms  BD_NO_DISPONIBLE
+  ✓ la ruta también responde 503 controlado
+2026-11-18T19:43:31.538Z  4. Base detenida: GET /salud       HTTP 503      6 ms  degradado
+  ✓ salud informa degradado
+  ✓ responde en menos de 5 s (no se queda colgada)
+
+> su postgres -c "/usr/lib/postgresql/16/bin/pg_ctl -D /var/pg/data -o '-p 5432 -k /tmp' -l /var/pg/log.txt start"
+waiting for server to start.... done
+server started
+2026-11-18T19:43:32.693Z  5. Base reiniciada: GET /salud     HTTP 200     19 ms  ok
+  ✓ la API se recupera sin reiniciar el servidor
+2026-11-18T19:43:32.701Z  6. Después: GET /ofertas           HTTP 200      8 ms  12 ofertas
+  ✓ vuelve a responder 200
+2026-11-18T19:43:32.726Z  7. Después: POST /rutas            HTTP 200     25 ms  
+  ✓ vuelve a calcular rutas
+
+RESULTADO: APROBADA

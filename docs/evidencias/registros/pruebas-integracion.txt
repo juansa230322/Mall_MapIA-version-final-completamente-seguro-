@@ -1,0 +1,22 @@
+
+> mallmapai@1.0.0 test:integration
+> node --env-file-if-exists=.env --test --test-concurrency=1 "tests/integration/*.test.js"
+
+✔ I-01 salud y mapa responden con los datos del sector (232.873995ms)
+✔ I-02 /ofertas solo devuelve ofertas vigentes (6.391766ms)
+✔ I-03 ruta piso 1 -> piso 3 con "Evitar escaleras" usa solo ascensores (71.186001ms)
+✔ I-04 errores de ruta: sin destino 400, nodo inexistente 404, mismo punto 200 (24.016452ms)
+✔ I-05 CRUD de promoción con token (34.502672ms)
+✔ I-06 rechaza duplicados (409), fechas inválidas (422), tienda inexistente (404) e id mal formado (400) (17.519994ms)
+✔ I-07 importar dos veces la misma carga no duplica ofertas (17.783771ms)
+[bd] conexión inactiva con error: Connection terminated unexpectedly
+[bd] conexión inactiva con error: Connection terminated unexpectedly
+✔ I-08 si PostgreSQL se interrumpe la API responde 503 y se recupera al volver (27.440251ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 550.852338

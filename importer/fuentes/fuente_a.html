@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><title>Fuente A (DEMOSTRACIÓN) - Tarjetas de ofertas</title></head>
+<body>
+<!-- Muestra ficticia creada para probar el importador. NO es una página comercial real. -->
+<h1>Boletín de ofertas — muestra A</h1>
+<section id="ofertas">
+  <article class="oferta" data-local="P3-L02">
+    <h2 class="oferta__titulo">3x2 en té de frutas</h2>
+    <p class="oferta__detalle">Aplica en cajas de 20 sobres. Muestra de demostración.</p>
+    <span class="oferta__descuento">33%</span>
+    <time class="oferta__inicio" datetime="2026-11-15">15 nov</time>
+    <time class="oferta__fin" datetime="2026-12-31">31 dic</time>
+  </article>
+  <article class="oferta" data-local="P2-L05">
+    <h2 class="oferta__titulo">Cojines decorativos con descuento</h2>
+    <p class="oferta__detalle">Hasta agotar existencias. Muestra de demostración.</p>
+    <span class="oferta__descuento">25 %</span>
+    <time class="oferta__inicio" datetime="2026-11-10">10 nov</time>
+    <time class="oferta__fin" datetime="2026-12-15">15 dic</time>
+  </article>
+  <article class="oferta" data-local="P3-L12">
+    <h2 class="oferta__titulo">Mantenimiento de bicicleta gratis</h2>
+    <p class="oferta__detalle">Por compras de accesorios. Muestra de demostración.</p>
+    <time class="oferta__inicio" datetime="2026-11-01">1 nov</time>
+    <time class="oferta__fin" datetime="2027-01-15">15 ene</time>
+  </article>
+  <!-- Registro con fecha inválida: el importador debe rechazarlo y seguir con los demás. -->
+  <article class="oferta" data-local="P3-L12">
+    <h2 class="oferta__titulo">Oferta con fecha imposible</h2>
+    <p class="oferta__detalle">Debe ser rechazada.</p>
+    <time class="oferta__inicio" datetime="2026-02-30">30 feb</time>
+    <time class="oferta__fin" datetime="2026-12-31">31 dic</time>
+  </article>
+</section>
+</body>
+</html>

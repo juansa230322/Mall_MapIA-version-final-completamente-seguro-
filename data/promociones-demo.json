@@ -1,0 +1,9 @@
+[
+ {"numeroLocal": "P1-L01", "titulo": "2x1 en camisetas básicas", "descripcion": "Dato de demostración. Aplica en referencias seleccionadas.", "porcentaje": null, "diasInicio": -3, "diasFin": 20},
+ {"numeroLocal": "P1-L07", "titulo": "20% en tenis para correr", "descripcion": "Dato de demostración. No es una promoción real de Unicentro.", "porcentaje": 20, "diasInicio": -1, "diasFin": 14},
+ {"numeroLocal": "P2-L02", "titulo": "Combo café y postre", "descripcion": "Dato de demostración.", "porcentaje": 15, "diasInicio": -5, "diasFin": 10},
+ {"numeroLocal": "P2-L09", "titulo": "15% en chaquetas impermeables", "descripcion": "Dato de demostración.", "porcentaje": 15, "diasInicio": 0, "diasFin": 30},
+ {"numeroLocal": "P3-L10", "titulo": "2x1 en revelado de fotos", "descripcion": "Dato de demostración.", "porcentaje": null, "diasInicio": -2, "diasFin": 21},
+ {"numeroLocal": "P3-L03", "titulo": "Bono de bienvenida", "descripcion": "Dato de demostración.", "porcentaje": 10, "diasInicio": -10, "diasFin": 5},
+ {"numeroLocal": "P3-L13", "titulo": "Promoción vencida (control)", "descripcion": "Registro de prueba que NO debe mostrarse porque ya venció.", "porcentaje": 25, "diasInicio": -40, "diasFin": -10}
+]

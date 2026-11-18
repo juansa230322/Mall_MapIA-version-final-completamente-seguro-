@@ -1,0 +1,212 @@
+[
+ {
+  "nodo": "P1-L01",
+  "numeroLocal": "P1-L01",
+  "nombre": "Moda Sabana (demo)",
+  "categoria": "Moda"
+ },
+ {
+  "nodo": "P1-L02",
+  "numeroLocal": "P1-L02",
+  "nombre": "Calzado Andino (demo)",
+  "categoria": "Calzado"
+ },
+ {
+  "nodo": "P1-L03",
+  "numeroLocal": "P1-L03",
+  "nombre": "TecnoPunto (demo)",
+  "categoria": "Tecnología"
+ },
+ {
+  "nodo": "P1-L04",
+  "numeroLocal": "P1-L04",
+  "nombre": "Casa Nogal (demo)",
+  "categoria": "Hogar"
+ },
+ {
+  "nodo": "P1-L05",
+  "numeroLocal": "P1-L05",
+  "nombre": "Café La Ceiba (demo)",
+  "categoria": "Comidas"
+ },
+ {
+  "nodo": "P1-L06",
+  "numeroLocal": "P1-L06",
+  "nombre": "Brillo Belleza (demo)",
+  "categoria": "Belleza"
+ },
+ {
+  "nodo": "P1-L07",
+  "numeroLocal": "P1-L07",
+  "nombre": "Ruta Deportiva (demo)",
+  "categoria": "Deportes"
+ },
+ {
+  "nodo": "P1-L08",
+  "numeroLocal": "P1-L08",
+  "nombre": "Libros del Parque (demo)",
+  "categoria": "Libros"
+ },
+ {
+  "nodo": "P1-L09",
+  "numeroLocal": "P1-L09",
+  "nombre": "Juguetes Cometa (demo)",
+  "categoria": "Juguetes"
+ },
+ {
+  "nodo": "P1-L10",
+  "numeroLocal": "P1-L10",
+  "nombre": "Óptica Mirador (demo)",
+  "categoria": "Óptica"
+ },
+ {
+  "nodo": "P2-L01",
+  "numeroLocal": "P2-L01",
+  "nombre": "Joyas Esmeralda (demo)",
+  "categoria": "Joyería"
+ },
+ {
+  "nodo": "P2-L02",
+  "numeroLocal": "P2-L02",
+  "nombre": "Dulces Momentos (demo)",
+  "categoria": "Comidas"
+ },
+ {
+  "nodo": "P2-L03",
+  "numeroLocal": "P2-L03",
+  "nombre": "Urbano Jeans (demo)",
+  "categoria": "Moda"
+ },
+ {
+  "nodo": "P2-L04",
+  "numeroLocal": "P2-L04",
+  "nombre": "Paso Firme (demo)",
+  "categoria": "Calzado"
+ },
+ {
+  "nodo": "P2-L05",
+  "numeroLocal": "P2-L05",
+  "nombre": "Click Hogar (demo)",
+  "categoria": "Hogar"
+ },
+ {
+  "nodo": "P2-L06",
+  "numeroLocal": "P2-L06",
+  "nombre": "Gamer Zona (demo)",
+  "categoria": "Tecnología"
+ },
+ {
+  "nodo": "P2-L07",
+  "numeroLocal": "P2-L07",
+  "nombre": "Arepa & Más (demo)",
+  "categoria": "Comidas"
+ },
+ {
+  "nodo": "P2-L08",
+  "numeroLocal": "P2-L08",
+  "nombre": "Piel Natural (demo)",
+  "categoria": "Belleza"
+ },
+ {
+  "nodo": "P2-L09",
+  "numeroLocal": "P2-L09",
+  "nombre": "Montaña Outdoor (demo)",
+  "categoria": "Deportes"
+ },
+ {
+  "nodo": "P2-L10",
+  "numeroLocal": "P2-L10",
+  "nombre": "Papelería Trazo (demo)",
+  "categoria": "Papelería"
+ },
+ {
+  "nodo": "P2-L11",
+  "numeroLocal": "P2-L11",
+  "nombre": "Bebés Arrullo (demo)",
+  "categoria": "Infantil"
+ },
+ {
+  "nodo": "P3-L01",
+  "numeroLocal": "P3-L01",
+  "nombre": "Relojes Tiempo (demo)",
+  "categoria": "Accesorios"
+ },
+ {
+  "nodo": "P3-L02",
+  "numeroLocal": "P3-L02",
+  "nombre": "Té y Flor (demo)",
+  "categoria": "Comidas"
+ },
+ {
+  "nodo": "P3-L03",
+  "numeroLocal": "P3-L03",
+  "nombre": "Estilo Ejecutivo (demo)",
+  "categoria": "Moda"
+ },
+ {
+  "nodo": "P3-L04",
+  "numeroLocal": "P3-L04",
+  "nombre": "Sonido Vivo (demo)",
+  "categoria": "Tecnología"
+ },
+ {
+  "nodo": "P3-L05",
+  "numeroLocal": "P3-L05",
+  "nombre": "Cocina Viva (demo)",
+  "categoria": "Hogar"
+ },
+ {
+  "nodo": "P3-L06",
+  "numeroLocal": "P3-L06",
+  "nombre": "Mascotas Felices (demo)",
+  "categoria": "Mascotas"
+ },
+ {
+  "nodo": "P3-L07",
+  "numeroLocal": "P3-L07",
+  "nombre": "Bolsos Viajero (demo)",
+  "categoria": "Accesorios"
+ },
+ {
+  "nodo": "P3-L08",
+  "numeroLocal": "P3-L08",
+  "nombre": "Helados Polar (demo)",
+  "categoria": "Comidas"
+ },
+ {
+  "nodo": "P3-L09",
+  "numeroLocal": "P3-L09",
+  "nombre": "Farmacia Bienestar (demo)",
+  "categoria": "Salud"
+ },
+ {
+  "nodo": "P3-L10",
+  "numeroLocal": "P3-L10",
+  "nombre": "Fotografía Lente (demo)",
+  "categoria": "Tecnología"
+ },
+ {
+  "nodo": "P3-L11",
+  "numeroLocal": "P3-L11",
+  "nombre": "Ropa Interior Suave (demo)",
+  "categoria": "Moda"
+ },
+ {
+  "nodo": "P3-L12",
+  "numeroLocal": "P3-L12",
+  "nombre": "Bicis Ciudad (demo)",
+  "categoria": "Deportes"
+ },
+ {
+  "nodo": "P3-L13",
+  "numeroLocal": "P3-L13",
+  "nombre": "Flores del Norte (demo)",
+  "categoria": "Regalos"
+ },
+ {
+  "nodo": "P3-L14",
+  "numeroLocal": "P3-L14",
+  "nombre": "Panadería Trigal (demo)",
+  "categoria": "Comidas"
+ }
+]

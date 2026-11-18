@@ -1,0 +1,13 @@
+
+> mallmapai@1.0.0 build
+> vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 33 modules transformed.
+rendering chunks...
+computing gzip size...
+../dist/index.html                   0.95 kB │ gzip:  0.57 kB
+../dist/assets/index-B1J4hwy5.css    7.73 kB │ gzip:  2.32 kB
+../dist/assets/index-m5xzYaXp.js   241.86 kB │ gzip: 76.57 kB
+✓ built in 1.57s
