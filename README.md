@@ -242,6 +242,7 @@ Para las pruebas de integración con PostgreSQL de Windows, crea la base de prue
 | Mensaje | Causa probable | Solución |
 |---|---|---|
 | `npm : No se puede cargar el archivo ... npm.ps1` | Política de scripts de PowerShell | Usa `npm.cmd` en lugar de `npm` |
+| `npm warn install-scripts ...` durante `npm ci` | npm 11 avisa que no ejecutó scripts de instalación | Es solo un aviso. Si `npm.cmd run build` funciona, puedes ignorarlo |
 | `npm ERR! ... package.json` | No estás en la carpeta correcta | Abre PowerShell dentro de `mallmapai` (paso 1) |
 | `ECONNREFUSED` en `db:init` | PostgreSQL apagado o puerto equivocado | Docker: `docker compose up -d db`. Windows: `Get-Service postgresql*`. Revisa 55432 (Docker) o 5432 (Windows) |
 | `password authentication failed` | Clave incorrecta en `DATABASE_URL` | Corrige la clave. En Docker, si cambiaste la clave después de crear el volumen, usa `docker compose down -v` y vuelve a crear |

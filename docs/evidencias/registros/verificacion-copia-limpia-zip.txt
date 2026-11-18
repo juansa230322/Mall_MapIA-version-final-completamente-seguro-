@@ -1,0 +1,23 @@
+Verificación de una copia recién extraída del ZIP (18-11-2026, Linux, Node 24.22.3, PostgreSQL 16)
+
+v24.22.3
+--- npm ci
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+--- db:init
+Base de datos lista.
+  pisos: 3 | nodos: 115 | conexiones: 121 | tiendas: 35 | promociones: 7 (vigentes: 6)
+--- build
+✓ built in 1.54s
+--- test (unit+integration)
+ℹ tests 24
+ℹ pass 24
+ℹ fail 0
+--- python
+OK
+--- e2e
+  2 skipped
+  14 passed (19.2s)
+--- importador x2
+TOTAL -> insertadas: 6 | actualizadas: 0 | rechazadas: 1
+TOTAL -> insertadas: 0 | actualizadas: 6 | rechazadas: 1
